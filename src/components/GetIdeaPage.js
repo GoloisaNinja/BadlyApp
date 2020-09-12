@@ -200,20 +200,12 @@ export default class GetIdeaPage extends React.Component {
         var highQArr = []
         var myBadIdeaObj = {}
         this.badArr.forEach((arr) => {
-            if (passion) {
-                if (arr.tags.includes(passion)) {
-                    highQArr.push(arr)
-                }
-            } 
-            if (segment) {
-                if (arr.segment.includes(segment)) {
-                    highQArr.push(arr)
-                }
-            }
-            if (attribute) {
-                if (arr.goal.includes(attribute)) {
-                    lowQArr.push(arr)
-                }
+            if (passion && arr.tags.includes(passion)) {
+                highQArr.push(arr)
+            } else if (segment && arr.segment.includes(segment)) {
+                highQArr.push(arr)
+            } else if (attribute && arr.goal.includes(attribute)) {
+                lowQArr.push(arr)
             }       
         })
        

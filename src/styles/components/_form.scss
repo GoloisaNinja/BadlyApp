@@ -7,18 +7,18 @@
 .form__label {
     font-weight: 200;
     font-style: italic;
-    font-size: $s-size;
+    font-size: $m-size;
     color: $off-white;
     padding: $s-size 0 $xs-size;
 }
 
 .form__input, .form__select {
     background-color: $bad-gray;
-    min-height: 2.75rem;
+    min-height: 3.75rem;
     border: none;
     border-bottom: .3rem solid darken($purple, 10%);
     color: white;
-    font-size: $s-size;
+    font-size: $m-size;
     flex-grow: 1;
 }
 
