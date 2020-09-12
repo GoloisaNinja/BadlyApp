@@ -13,6 +13,12 @@ body {
     font-family: 'Railway', sans-serif;
 }
 
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
 button {
     cursor: pointer;
 }
