@@ -1,0 +1,35 @@
+.nav__link {
+    color: $off-white;
+    font-size: $s-size;
+    font-weight: 800;
+    text-decoration: none;
+    padding: 0 $xs-size 0 0;
+}
+
+.nav__link--last {
+    color: $off-white;
+    font-size: $s-size;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.nav__container {
+    padding: $xs-size 0 0 0;
+    align-self: flex-end;
+}
+
+.is-active {
+    color: white;
+}
+
+@media (min-width: $desktop-breakpoint) {
+    .nav__link {
+        padding: 0 $m-size 0 0;
+        font-size: $m-size;
+    }
+    .nav__link--last {
+        font-size: $m-size;
+    }
+}
+
+

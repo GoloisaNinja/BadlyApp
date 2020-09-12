@@ -1,0 +1,28 @@
+
+html {
+    font-size: 62.5%;
+    background: url('https://i.imgur.com/V9MAflZ.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100%;
+    background-color: $bad-blue;
+}
+
+body {
+    font-size: $m-size;
+    color: white;
+    font-family: 'Railway', sans-serif;
+}
+
+button {
+    cursor: pointer;
+}
+
+button:disabled {
+    cursor: auto;
+}
+
+input, select {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
