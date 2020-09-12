@@ -23,11 +23,11 @@ export default class Form extends React.Component {
             <div>
                 <form className="form" onSubmit={this.handleIdea}>
                     <label className="form__label">Enter something you're passionate about, e.g. Scooters</label>
-                        <input className="form__input" type="text" name="passion"/>
+                        <input className="form__input" type="text" name="passion" required />
                     <label className="form__label">Enter your desired business segment, e.g. Finance</label>
-                        <input className="form__input" type="text" name="segment" />
+                        <input className="form__input" type="text" name="segment" required />
                     <label className="form__label">Finally, select the business attribute you desire most</label>
-                        <select className="form__select" name="attribute">
+                        <select className="form__select" name="attribute" required >
                             <option className="form__option">Immoral Company Profitability</option>
                             <option className="form__option">Ill-gotten Financial Gain</option>
                             <option className="form__option">Innovation</option>

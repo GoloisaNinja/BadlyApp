@@ -200,16 +200,14 @@ export default class GetIdeaPage extends React.Component {
         var highQArr = []
         var myBadIdeaObj = {}
         this.badArr.forEach((arr) => {
-            if (passion && arr.tags.includes(passion)) {
+            if (arr.tags.includes(passion) || arr.segment.includes(segment)) {
                 highQArr.push(arr)
-            } else if (segment && arr.segment.includes(segment)) {
-                highQArr.push(arr)
-            } else if (attribute && arr.goal.includes(attribute)) {
+            } else if (arr.goal.includes(attribute)) {
                 lowQArr.push(arr)
             }       
         })
        
-        if (highQArr.length > 0) {
+        if (highQArr) {
             myBadIdeaObj = this.randNum(highQArr)
         } else {
             myBadIdeaObj = this.randNum(lowQArr)
