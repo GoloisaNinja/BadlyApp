@@ -196,9 +196,9 @@ export default class GetIdeaPage extends React.Component {
     }
     
     handleIdea = ({ passion, segment, attribute }) => {
-        let lowQArr = []
-        let highQArr = []
-        let myBadIdeaObj = {}
+        var lowQArr = []
+        var highQArr = []
+        var myBadIdeaObj = {}
         this.badArr.forEach((arr) => {
             if (passion) {
                 if (arr.tags.includes(passion)) {
@@ -226,7 +226,7 @@ export default class GetIdeaPage extends React.Component {
         console.log(highQArr)
         console.log(lowQArr)
         console.log(myBadIdeaObj)
-                
+
         this.setState(() => ({ 
             formSubmit: true,
             title: myBadIdeaObj.title,
