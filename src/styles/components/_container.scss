@@ -53,6 +53,7 @@
 
 .container__idea {
     background-color: $bad-gray;
-    padding: $xs-size;
+    border-bottom: .3rem solid darken($dark-blue, 5%);
+    padding: $s-size;
     margin: 0;
 }
