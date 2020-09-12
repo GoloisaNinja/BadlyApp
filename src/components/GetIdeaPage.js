@@ -223,7 +223,10 @@ export default class GetIdeaPage extends React.Component {
             myBadIdeaObj = this.randNum(lowQArr)
         }
         
-        
+        console.log(highQArr)
+        console.log(lowQArr)
+        console.log(myBadIdeaObj)
+                
         this.setState(() => ({ 
             formSubmit: true,
             title: myBadIdeaObj.title,
