@@ -10,32 +10,32 @@ const HomePage = () => (
                 Prepare to have your mind blown and your life radically changed forever! Here at Badly, we work tirelessly to bring
                 you the worst and most dispicable business ideas you've ever encountered. 
                 </p>
-                <h4>
+                <h2>
                 The <span className="text-transform">Idea</span>
-                </h4>
+                </h2>
                 <p className="container__ptext">
                 In the competitive world of business and startups, you need an edge to succeed.  And nothing is edgier than terrible ideas!  Here at Badly
                 we're committed to brining you the most absurd, and often, deeply illegal and dangerously stupid ideas you 
                 can possibly fathom.
                 </p>
-                <h4>
+                <h2>
                 The <span className="text-transform">How</span>
-                </h4>
+                </h2>
                 <p className="container__ptext">
                 Thanks to AOL, the electron, and microfiber jeans - the Badly team has been able to accumulate and cultivate 
                 the finest bad business ideas on the planet.  With just a few quick responses from you (as well as your virtual pinky promise that 
                 you'll never open any kind of litigation against Badly) our custom algorithm will match your passion and interests to 
                 a genuinely horrible business idea!  It's that simple!  Navigate to the get idea section to get started.
                 </p>
-                <h4>
+                <h2>
                 The <span className="text-transform">Why</span>
-                </h4>
+                </h2>
                 <p className="container__ptext">
                 Boats and Hoes. 
                 Garden hoes obviously. 
                 <br />
                 </p>
-                <h2>Testimonials!</h2>
+                <h2>The <span className="text-transform">Testimonials!</span></h2>
                 <div className="container__testimonial">
                     <p className="container__testimonial-ptest">"I clicked here by accident...ALEXA, call GRANDKIDS" - Roger Oakland, CA</p>
                 </div>
