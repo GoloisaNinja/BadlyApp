@@ -8,7 +8,7 @@ const HomePage = () => (
                 </h2>
                 <p className="container__ptext">
                 Prepare to have your mind blown and your life radically changed forever! Here at Badly, we work tirelessly to bring
-                you the worst and most dispicable business ideas you've ever encountered. 
+                you the worst and most despicable business ideas you've ever encountered. 
                 </p>
                 <h2>
                 The <span className="text-transform">Idea</span>
