@@ -7,7 +7,8 @@ export default class GetIdeaPage extends React.Component {
     state = {
         formSubmit: false,
         title: '',
-        idea: ''
+        idea: '',
+        tags: []
     }
 
     badArr = [{
@@ -192,20 +193,31 @@ export default class GetIdeaPage extends React.Component {
     }
 
     removeIdea = () => {
-        this.setState(() => ({ formSubmit: false, title: '', idea: '' }))
+        this.setState(() => ({ 
+          formSubmit: false, 
+          title: '', 
+          idea: '',
+          tags: []
+        }))
     }
     
     handleIdea = ({ passion, segment, attribute }) => {
       console.log(passion, segment, attribute)
-        var lowQArr = []
-        var highQArr = []
-        var myBadIdeaObj = {}
+        let lowQArr = []
+        let highQArr = []
+        let myBadIdeaObj = {}
         this.badArr.forEach((arr) => {
-            if (arr.tags.includes(passion) || arr.segment.includes(segment)) {
+            if (arr.tags.includes(passion)) {
                 highQArr.push(arr)
-            } else if (arr.goal.includes(attribute)) {
+                highQArr.push(arr)
+            }
+            if (arr.segment.includes(segment)) {
+                highQArr.push(arr)
+            }
+            if (arr.goal.includes(attribute)) {
                 lowQArr.push(arr)
-            }       
+            }
+
         })
        
         if (highQArr.length > 0) {
@@ -217,11 +229,13 @@ export default class GetIdeaPage extends React.Component {
         console.log(highQArr)
         console.log(lowQArr)
         console.log(myBadIdeaObj)
+        const tagsArr = myBadIdeaObj.tags.concat(myBadIdeaObj.segment)
 
         this.setState(() => ({ 
             formSubmit: true,
             title: myBadIdeaObj.title,
-            idea: myBadIdeaObj.idea
+            idea: myBadIdeaObj.idea,
+            tags: tagsArr.join()
         }))
     }
         
@@ -233,7 +247,10 @@ export default class GetIdeaPage extends React.Component {
                 <h2>Idea <span className="text-transform">Town</span></h2>
                 <p className="container__ptext">Our patented algorithmic system requires only 
                 a few responses from you and is *guaranteed to match you
-                to your **perfect start-up idea!  You are mere seconds away from the ***single greatest moment of your
+                to your **perfect start-up idea!  Our ridiculously complicated process applies
+                the most weighting to what you are passionate about and your desired business segment.  
+                Finally, we attempt to incorporate your selected business attribute for a bad business
+                trifecta!  You are mere seconds away from the ***single greatest moment of your
                 entire life! 
                 </p>
                 <p className="fineprint">
@@ -256,6 +273,7 @@ export default class GetIdeaPage extends React.Component {
                     <BadIdea 
                         title={this.state.title}
                         idea={this.state.idea}
+                        tags={this.state.tags}
                         removeIdea={this.removeIdea}
                     />}
             </div>
