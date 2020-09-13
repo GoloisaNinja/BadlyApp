@@ -196,6 +196,7 @@ export default class GetIdeaPage extends React.Component {
     }
     
     handleIdea = ({ passion, segment, attribute }) => {
+      console.log(passion, segment, attribute)
         var lowQArr = []
         var highQArr = []
         var myBadIdeaObj = {}
@@ -207,7 +208,7 @@ export default class GetIdeaPage extends React.Component {
             }       
         })
        
-        if (highQArr) {
+        if (highQArr.length > 0) {
             myBadIdeaObj = this.randNum(highQArr)
         } else {
             myBadIdeaObj = this.randNum(lowQArr)

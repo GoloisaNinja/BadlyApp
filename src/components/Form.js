@@ -6,8 +6,8 @@ export default class Form extends React.Component {
     handleIdea = (e) => {
         e.preventDefault()
         const details = {
-            passion: e.target.elements.passion.value.trim(),
-            segment: e.target.elements.segment.value.trim(),
+            passion: e.target.elements.passion.value.toLowerCase().trim(),
+            segment: e.target.elements.segment.value.toLowerCase().trim(),
             attribute: e.target.elements.attribute.value.toLowerCase()
         }
 
