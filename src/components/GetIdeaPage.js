@@ -229,7 +229,7 @@ export default class GetIdeaPage extends React.Component {
         console.log(highQArr)
         console.log(lowQArr)
         console.log(myBadIdeaObj)
-        const tagsArr = myBadIdeaObj.tags.concat(myBadIdeaObj.segment)
+        const tagsArr = myBadIdeaObj.tags.concat(myBadIdeaObj.segment, myBadIdeaObj.goal)
 
         this.setState(() => ({ 
             formSubmit: true,
