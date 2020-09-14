@@ -1,7 +1,9 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
+import Headroom from 'react-headroom'
 
 const Header = () => (
+    <Headroom>
     <div className="header">
         <div className="header__text">
             <h1 className="header__title">BADLY <span className="text-transform">APP</span></h1>
@@ -29,7 +31,7 @@ const Header = () => (
             </NavLink>
         </div>
     </div> 
-    
+    </Headroom>
 )
 
 export default Header
