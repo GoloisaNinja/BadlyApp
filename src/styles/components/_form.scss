@@ -1,7 +1,7 @@
 .form {
     display: flex;
     flex-direction: column;
-    padding: $m-size;
+    //padding: $m-size;
 }
 
 .form__label {
@@ -14,7 +14,7 @@
 
 .form__input, .form__select {
     background-color: $bad-gray;
-    min-height: 3.75rem;
+    min-height: 4rem;
     border: none;
     border-bottom: .3rem solid darken($purple, 10%);
     color: white;
