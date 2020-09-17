@@ -226,10 +226,8 @@ export default class GetIdeaPage extends React.Component {
             myBadIdeaObj = this.randNum(lowQArr)
         }
         
-        console.log(highQArr)
-        console.log(lowQArr)
-        console.log(myBadIdeaObj)
         const tagsArr = myBadIdeaObj.tags.concat(myBadIdeaObj.segment, myBadIdeaObj.goal)
+
 
         this.setState(() => ({ 
             formSubmit: true,
@@ -239,6 +237,32 @@ export default class GetIdeaPage extends React.Component {
         }))
     }
         
+    componentDidMount() {
+      console.log('mounted get idea')
+
+      try {
+          const json = localStorage.getItem('formSubmit')
+          const formSubmit = JSON.parse(json)
+          const title = localStorage.getItem('title')
+          const idea = localStorage.getItem('idea')
+          const tags = localStorage.getItem('tags')
+          if (formSubmit) {
+          this.setState(() => ({ formSubmit, title, idea, tags }))
+          }
+      } catch(e) {
+
+      }
+      
+  }
+
+  componentDidUpdate(prevProps, prevState) {
+        console.log('updated get idea')
+        localStorage.setItem('formSubmit', this.state.formSubmit)
+        localStorage.setItem('title', this.state.title)
+        localStorage.setItem('idea', this.state.idea)
+        localStorage.setItem('tags', this.state.tags)
+      
+  }
 
     render() {
 
