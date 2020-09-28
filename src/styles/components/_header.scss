@@ -9,19 +9,22 @@
     justify-content: space-between;
     flex-shrink: 0;
 }
+.header__text {
+    padding-top: $s-size;
+}
 
 .header__title {
     font-size: 2.79rem;
     margin-bottom: 0;
     margin-top: 0;
-    padding: $s-size 0 0 0;
+    padding: $xs-size 0 0 0;
 }
 
 .header__subtitle {
     font-size: 1.25rem;
     color: $off-white;
     margin: auto;
-    padding-bottom: $xs-size;
+    padding-bottom: $s-size;
 }
 
 @media (min-width: $desktop-breakpoint) {
