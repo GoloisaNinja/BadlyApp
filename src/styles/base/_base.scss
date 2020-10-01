@@ -1,12 +1,12 @@
 
 html {
     font-size: 62.5%;
-    background: url('https://i.imgur.com/V9MAflZ.jpg') no-repeat center center fixed;
+    //background: url('https://i.imgur.com/V9MAflZ.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    background-color: $bad-blue;
+    background-color: darken(#091d3d, 1.6%)
 }
 
 body {

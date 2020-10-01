@@ -1,12 +1,18 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+import { NavLink, Link } from 'react-router-dom'
 import Headroom from 'react-headroom'
 
 const Header = () => (
     <Headroom>
     <div className="header">
         <div className="header__text">
-            <h1 className="header__title">BADLY <span className="text-transform">APP</span></h1>
+        <Link 
+                className="link__title" 
+                exact={'true'}
+                to="/" >
+                <h1 className="header__title">BADLY<span className="text-transform">APP</span></h1>
+                </Link>
+            
             <h4 className="header__subtitle"><span className="text-transform">Doing Business.</span> Badly.</h4>
         </div>
         <div className="nav__container">

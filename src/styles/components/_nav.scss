@@ -14,8 +14,14 @@
 }
 
 .nav__container {
-    padding: $xs-size 0 $s-size 0;
+    opacity: 0;
+    padding: $xs-size 0 $xs-size 0;
     align-self: flex-end;
+    animation-name: moveInRight;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
 }
 
 .is-active {
@@ -32,4 +38,18 @@
     }
 }
 
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(10rem);
+    }
 
+    80% {
+        transform: translate(-1rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}

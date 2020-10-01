@@ -267,6 +267,7 @@ export default class GetIdeaPage extends React.Component {
     render() {
 
         return (
+          <div className="container__flex-footer">
             <div className="container">
                 <h2>Idea <span className="text-transform">Town</span></h2>
                 <p className="container__ptext">Our patented algorithmic system requires only 
@@ -277,11 +278,9 @@ export default class GetIdeaPage extends React.Component {
                 trifecta!  You are mere seconds away from the ***single greatest moment of your
                 entire life! 
                 </p>
-                <p className="fineprint">
+                <p className="fineprint__warning">
                 *not at all guaranteed and will absolutely fail
-                <br />
                 **not at all perfect and will absolutely fail
-                <br />
                 ***not even remotely comprable to the actual greatest moment of your life
                 </p>
                 <br />
@@ -301,6 +300,7 @@ export default class GetIdeaPage extends React.Component {
                         removeIdea={this.removeIdea}
                     />}
             </div>
+           </div> 
         )
     
     }

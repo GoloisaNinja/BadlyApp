@@ -5,11 +5,18 @@
     flex-shrink: 0;
     padding: 0 $s-size;
 }
-
 .fineprint {
     font-size: 1rem;
     margin-bottom: 0;
     padding: $xs-size 0 0 0;
     text-align: center;
+}
+
+.fineprint__warning {
+    font-size: 1rem;
+    margin-bottom: 0;
+    padding: $xs-size 0 0 0;
+    text-align: left;
+    color: $off-white;
 }
 
