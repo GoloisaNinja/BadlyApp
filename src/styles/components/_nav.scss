@@ -17,7 +17,7 @@
     opacity: 0;
     padding: $xs-size 0 $xs-size 0;
     align-self: flex-end;
-    animation-name: moveInRight;
+    animation-name: moveInTop;
     animation-fill-mode: forwards;
     animation-delay: 1s;
     animation-duration: 1s;
@@ -38,14 +38,14 @@
     }
 }
 
-@keyframes moveInRight {
+@keyframes moveInTop {
     0% {
         opacity: 0;
-        transform: translateX(10rem);
+        transform: translateY(-.5rem);
     }
 
     80% {
-        transform: translate(-1rem);
+        transform: translateY(.5rem);
     }
 
     100% {
