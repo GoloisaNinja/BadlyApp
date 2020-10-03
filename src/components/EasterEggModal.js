@@ -13,7 +13,7 @@ const EasterEggModal = (props) => (
         >
         <h3 className="modal__title">You found an Easter Egg!</h3>
         {props.belongsModal === 'marc' && <p className="modal__body">Hi Marc!</p>}
-        {props.belongsModal === 'jarrett' && <p className="modal__body"><img className="modal__pic" src={hibachiPic}></img><br />Hibachi!</p>}
+        {props.belongsModal === 'jarrett' && <p className="modal__body"><img className="modal__pic" src="https://i.imgur.com/MszQ8wM.jpg"></img><br />Hibachi!</p>}
         <button className="button" onClick={props.modalClose}>Yay!</button>
         </Modal>
     ) 
