@@ -31,21 +31,29 @@ export default class AboutPage extends React.Component {
             "Let's do this...Really, really, Badly." and here we are today.  We don't do anything without thinking of you, the customer, and
             just how Badly can affect your life.
             </p>
-            <h4>The <span className="text-transform">Team</span></h4>
+            <div className="flex_div">
+            <h4 className="flex_img">The <span className="text-transform">Team</span></h4>
+            </div>
             <div className="container__team">
                 <div className="container__team--pic">
                     <p className="container__team--pic--text">Marc</p>
-                    <a href="#" onClick={this.handleMarcModal}><img className="container__team--pic-pic2" src={marcPic}></img></a>
+                    <div className="img_cont">
+                    <a href="#" onClick={this.handleMarcModal}><img className="container__team--pic" width="500px" height="500px" src={marcPic}></img></a>
+                    </div>
                     <p className="container__team--pic--text">Leads Badly</p>
                 </div>
                 <div className="container__team--pic">
                     <p className="container__team--pic--text">Jarrett</p>
-                    <a href="#" onClick={this.handleJarrettModal}><img className="container__team--pic-pic2" src={jarrettPic}></img></a>
+                    <div className="img_cont">
+                    <a href="#" onClick={this.handleJarrettModal}><img className="container__team--pic" width="500px" height="500px" src={jarrettPic}></img></a>
+                    </div>
                     <p className="container__team--pic--text">Does Bad Badly</p>
                 </div>
                 <div className="container__team--pic">
                     <p className="container__team--pic--text">Jon</p>
-                    <img className="container__team--pic-pic2" src={jackPic}></img>
+                    <div className="img_cont">
+                    <img className="container__team--pic" width="500px" height="500px" src={jackPic}></img>
+                    </div>
                     <p className="container__team--pic--text">Bad at Badly</p>
                 </div>
             </div>
