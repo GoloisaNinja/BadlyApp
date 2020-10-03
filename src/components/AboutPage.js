@@ -1,5 +1,8 @@
 import React from 'react'
 import EasterEggModal from './EasterEggModal'
+import jarrettPic from '../../public/images/jarrett.png'
+import marcPic from '../../public/images/marc.png'
+import jackPic from '../../public/images/jack.png'
 
 export default class AboutPage extends React.Component {
     state = {
@@ -33,17 +36,17 @@ export default class AboutPage extends React.Component {
             <div className="container__team">
                 <div className="container__team--pic">
                     <p className="container__team--pic--text">Marc</p>
-                    <a href="#" onClick={this.handleMarcModal}><img className="container__team--pic pic" src="https://i.imgur.com/4S6Nnx0.png"></img></a>
+                    <a href="#" onClick={this.handleMarcModal}><img className="container__team--pic pic" src={marcPic}></img></a>
                     <p className="container__team--pic--text">Leads Badly</p>
                 </div>
                 <div className="container__team--pic">
                     <p className="container__team--pic--text">Jarrett</p>
-                    <a href="#" onClick={this.handleJarrettModal}><img className="container__team--pic pic" src="https://i.imgur.com/XukuxtU.png"></img></a>
+                    <a href="#" onClick={this.handleJarrettModal}><img className="container__team--pic pic" src={jarrettPic}></img></a>
                     <p className="container__team--pic--text">Does Bad Badly</p>
                 </div>
                 <div className="container__team--pic">
                     <p className="container__team--pic--text">Jon</p>
-                    <img className="container__team--pic pic" src="https://i.imgur.com/IrKS8Hz.png"></img>
+                    <img className="container__team--pic pic" src={jackPic}></img>
                     <p className="container__team--pic--text">Bad at Badly</p>
                 </div>
             </div>

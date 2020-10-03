@@ -17,6 +17,12 @@ module.exports = (env) => {
                 test: /\.js$/,
                 exclude: /node_modules/
             }, {
+                test: /\.(png|svg|jpg|jpeg|gif)$/,
+                use: [
+                    'file-loader'
+                ]
+            },
+            {
                 test: /\.s?css$/,
                 use: CSSExtract.extract({
                     use: [
@@ -34,6 +40,7 @@ module.exports = (env) => {
                         }
                     ]
                 })
+              
             }]
         },
         plugins: [
