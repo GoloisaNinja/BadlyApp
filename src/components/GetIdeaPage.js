@@ -8,7 +8,9 @@ export default class GetIdeaPage extends React.Component {
         formSubmit: false,
         title: '',
         idea: '',
-        tags: []
+        tags: [],
+        modalShow: false,
+        modalBelongs: ''
     }
 
     badArr = [{

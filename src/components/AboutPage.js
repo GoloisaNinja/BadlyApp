@@ -5,22 +5,21 @@ import marcPic from '../../public/images/marc.png'
 import jackPic from '../../public/images/jack.png'
 
 export default class AboutPage extends React.Component {
+    
     state = {
-        modal: {
-            show: false,
-            belongs: ''
-        }
+        modalShow: false,
+        modalBelongs: ''
     }
     onModalClose = () => {
-        this.setState(() => ({ modal: { show: false, belongs: '' }}))
+        this.setState((prevState) => ({ prevState, modalShow: false, modalBelongs: '' }))
     }
     handleMarcModal = (e) => {
         e.preventDefault()
-        this.setState((prevState) => ({ modal: { show: true, belongs: 'marc' } }))
+        this.setState((prevState) => ({ prevState, modalShow: true, modalBelongs: 'marc' }))
     }
     handleJarrettModal = (e) => {
         e.preventDefault()
-        this.setState((prevState) => ({ modal: { show: true, belongs: 'jarrett' } }))
+        this.setState((prevState) => ({ prevState, modalShow: true, modalBelongs: 'jarrett' }))
     }
 
     render() {
@@ -68,8 +67,8 @@ export default class AboutPage extends React.Component {
             car batteries into the world's oceans.  And Jon.  Well, we really don't know what Jon has to offer.  As his bio states, he's bad at Badly.  
             </p>
             <EasterEggModal 
-                showModal={this.state.modal.show}
-                belongsModal={this.state.modal.belongs}
+                showModal={this.state.modalShow}
+                belongsModal={this.state.modalBelongs}
                 modalClose={this.onModalClose}
             />
         </div>

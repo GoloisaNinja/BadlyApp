@@ -1,4 +1,5 @@
 import React from 'react'
+import dogePic from '../../public/images/doge.png'
 
 const PageNotFound = () => (
     <div className="container__flex-footer">
@@ -7,7 +8,7 @@ const PageNotFound = () => (
         <p className="container__team--pic--text">Wow - much empty</p>
         </div>
             <div className="doge">
-                <img className="img_doge" src="https://i.imgur.com/iAGprY4.png"></img>
+                <img className="img_doge" src={dogePic}></img>
             </div>
         
         <h2>
