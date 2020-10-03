@@ -3,7 +3,12 @@
     width: 100%;
     height: auto;
 }
-
+.container__team--pic-pic {
+    width: 100%;
+    height: auto;
+    animation-name: teamFade;
+    animation-duration: 1.5s;
+}
 
 .container__team--pic--text {
     text-align: center;
@@ -12,4 +17,12 @@
 
 .flex_div {
     flex-grow: 1;
+}
+@keyframes teamFade {
+    0% {
+        opacity: 0;
+    }
+    80% {
+        opacity: 1;
+    }
 }
