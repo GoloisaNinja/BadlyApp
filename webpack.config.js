@@ -17,7 +17,7 @@ module.exports = (env) => {
                 test: /\.js$/,
                 exclude: /node_modules/
             }, {
-                test: /\.(png|svg|jpg|jpeg|gif)$/,
+                test: /\.(png|svg|jpg|gif)$/,
                 use: [
                     'file-loader'
                 ]

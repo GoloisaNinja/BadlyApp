@@ -8,7 +8,7 @@ const PageNotFound = () => (
         <p className="container__team--pic--text">Wow - much empty</p>
         </div>
             <div className="doge">
-                <img className="img_doge" width="500px" height="268px" src={dogePic}></img>
+                <img className="img_doge" width="500px" height="268px" src="https://i.imgur.com/iAGprY4.png"></img>
             </div>
         
         <h2>

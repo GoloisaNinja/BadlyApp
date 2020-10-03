@@ -38,21 +38,21 @@ export default class AboutPage extends React.Component {
                 <div className="container__team--pic">
                     <p className="container__team--pic--text">Marc</p>
                     <div className="img_cont">
-                    <a href="#" onClick={this.handleMarcModal}><img className="container__team--pic" width="500px" height="500px" src={marcPic}></img></a>
+                    <a href="#" onClick={this.handleMarcModal}><img className="container__team--pic" width="500px" height="500px" src="https://i.imgur.com/4S6Nnx0.png"></img></a>
                     </div>
                     <p className="container__team--pic--text">Leads Badly</p>
                 </div>
                 <div className="container__team--pic">
                     <p className="container__team--pic--text">Jarrett</p>
                     <div className="img_cont">
-                    <a href="#" onClick={this.handleJarrettModal}><img className="container__team--pic" width="500px" height="500px" src={jarrettPic}></img></a>
+                    <a href="#" onClick={this.handleJarrettModal}><img className="container__team--pic" width="500px" height="500px" src="https://i.imgur.com/XukuxtU.png"></img></a>
                     </div>
                     <p className="container__team--pic--text">Does Bad Badly</p>
                 </div>
                 <div className="container__team--pic">
                     <p className="container__team--pic--text">Jon</p>
                     <div className="img_cont">
-                    <img className="container__team--pic" width="500px" height="500px" src={jackPic}></img>
+                    <img className="container__team--pic" width="500px" height="500px" src="https://i.imgur.com/IrKS8Hz.png"></img>
                     </div>
                     <p className="container__team--pic--text">Bad at Badly</p>
                 </div>
