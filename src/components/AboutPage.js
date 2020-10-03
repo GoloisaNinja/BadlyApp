@@ -35,17 +35,17 @@ export default class AboutPage extends React.Component {
             <div className="container__team">
                 <div className="container__team--pic">
                     <p className="container__team--pic--text">Marc</p>
-                    <a href="#" onClick={this.handleMarcModal}><img className="container__team--pic pic" src={marcPic}></img></a>
+                    <a href="#" onClick={this.handleMarcModal}><img className="container__team--pic-pic2" src={marcPic}></img></a>
                     <p className="container__team--pic--text">Leads Badly</p>
                 </div>
                 <div className="container__team--pic">
                     <p className="container__team--pic--text">Jarrett</p>
-                    <a href="#" onClick={this.handleJarrettModal}><img className="container__team--pic pic" src={jarrettPic}></img></a>
+                    <a href="#" onClick={this.handleJarrettModal}><img className="container__team--pic-pic2" src={jarrettPic}></img></a>
                     <p className="container__team--pic--text">Does Bad Badly</p>
                 </div>
                 <div className="container__team--pic">
                     <p className="container__team--pic--text">Jon</p>
-                    <img className="container__team--pic pic" src={jackPic}></img>
+                    <img className="container__team--pic-pic2" src={jackPic}></img>
                     <p className="container__team--pic--text">Bad at Badly</p>
                 </div>
             </div>
