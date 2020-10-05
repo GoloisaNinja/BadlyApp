@@ -1,4 +1,5 @@
 import React from 'react'
+import Testimonials from './Testimonials'
 
 const HomePage = () => (
 
@@ -31,24 +32,11 @@ const HomePage = () => (
                 The <span className="text-transform">Why</span>
                 </h2>
                 <p className="container__ptext">
-                Boats and Hoes. 
-                Garden hoes obviously. 
+                I mean, why not ammiright? 
                 <br />
                 </p>
                 <h2>The <span className="text-transform">Testimonials!</span></h2>
-                <div className="container__testimonial">
-                    <p className="container__testimonial-ptest">"I clicked here by accident...ALEXA, call GRANDKIDS" - Roger Oakland, CA</p>
-                </div>
-                <div className="container__testimonial">
-                    <p className="container__testimonial-ptest">"Initially I had complained to the manager about Badly ruining my whole life,
-                    but after a pumpkin spice latte, I now think they are awesome! #Badly!" 
-                    - Karen Covfefe, OH</p>
-                </div>
-                <div className="container__testimonial">
-                    <p className="container__testimonial-ptest">"I started thinking I should start a business.  But like, what should I even do?  
-                    Badly gave me a direction to steer my dreams by.  And now I'm making less money than I've ever made before.  I can't say enough
-                    about Badly!" - Kevin Vax, MI</p>
-                </div>
+                <Testimonials />
             </div>
 )
 export default HomePage

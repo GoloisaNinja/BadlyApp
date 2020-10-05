@@ -37,7 +37,7 @@
     color: $off-white;
 }
 
-.container__testimonial-ptest {
+.container__testimonial-ptest1 {
     font-weight: 200;
     font-size: $m-size;
     font-style: italic;
@@ -47,13 +47,53 @@
     max-width: 45rem;
     padding: 10px 0;
     text-align: center;
+    animation-name: testFade;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+
+.container__testimonial-ptest2 {
+    font-weight: 200;
+    font-size: $m-size;
+    font-style: italic;
+    color: $off-white;
+    border-top: 0.12rem solid darken($purple, 10%);
+    border-bottom: 0.12rem solid darken($purple, 10%);
+    max-width: 45rem;
+    padding: 10px 0;
+    text-align: center;
+    animation-name: testFade;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    opacity: 0;
+}
+
+.container__testimonial-ptest3 {
+    font-weight: 200;
+    font-size: $m-size;
+    font-style: italic;
+    color: $off-white;
+    border-top: 0.12rem solid darken($purple, 10%);
+    border-bottom: 0.12rem solid darken($purple, 10%);
+    max-width: 45rem;
+    padding: 10px 0;
+    text-align: center;
+    animation-name: testFade;
+    animation-duration: 1s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    opacity: 0;
 }
  
 .container__team {
     display: flex;
     flex-direction: row;
     max-width: 60rem;
-    justify-content: space-around;
+    
 }
 
 .container__idea {
@@ -65,4 +105,14 @@
 
 .container__badDiv {
     padding-top: $m-size;
+}
+
+@keyframes testFade {
+    0% {
+        opacity: 0;
+    }
+    
+    100% {
+        opacity: 1;
+    }
 }
